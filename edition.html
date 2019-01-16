@@ -1,0 +1,193 @@
+<!DOCTYPE html><html lang="ru"><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Crypto Balls</title>
+	<link rel="stylesheet" href="./css/main.min.138f5288.css" crossorigin="anonymous" integrity="sha384-1fJDG8gUoAVP4SRUcO4UNo2bJl9CCphs0Fs+KhY2O8bwfh3VZjh1FgxOuws6dpEY">
+	<link rel="apple-touch-icon" sizes="57x57" href="./apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="./apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="./apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="./apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="./apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="./apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="./apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="./apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="./apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="./android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="./favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="./ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="manifest" href="./manifest.json">
+</head>
+<body>
+	<div id="loader-wrapper">
+		<div id="loader">
+			<div class="circle circle-1"></div>
+			<div class="circle circle-1a"></div>
+			<div class="circle circle-2"></div>
+			<div class="circle circle-3"></div>
+			<h1>Loading...</h1>
+		</div>
+		<div class="loader-section section-left"></div>
+		<div class="loader-section section-right"></div>
+	</div>
+	<header class="header">
+		<div class="header-container">
+			<div class="header-wrapper">
+				<div class="logo">
+					<img src="img/logo.png" alt="">
+				</div>
+				<a href="buy.html" class="button button-header action">Купить билет</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">О лотерее</a></li>
+						<li><a href="archive.html" class="active">Архив тиражей</a></li>
+						<li><a href="regulation.html">Правила</a></li>
+						<li class="action"><a href="myticket.html">Мои билеты <span data-tw-scope="Contract645" data-tw-bind="myTicketsCount">0</span></a></li>
+						<li class="action"><a href="referrals.html">Рефералы</a></li>
+					</ul>
+				</nav>
+				<div class="btn-popup-menu">Навигация</div>
+				<div class="output">
+					<div class="output-number">
+						<p data-tw-scope="Contract645" data-tw-bind="myBalance" data-tw-filter="ether">0</p>
+						<span>ETH</span>
+					</div>
+					<a href="#" class="withdraw action">Вывести</a>
+				</div>
+			</div>
+		</div>
+		<div class="header-line">
+			<span>Открытая ETH лотерея</span>
+		</div>
+	</header>
+
+	<main class="main edition">
+		<div class="container">
+			<div class="edition-wrapper">
+				<div class="edition-title">
+					<h1>Результат розыгрыша № <i id="draw-number"></i></h1>
+					<p id="draw-time"></p>
+				</div>
+				<div class="edition-number-wrapper">
+					<div class="edition-number" data-number="0">-</div>
+					<div class="edition-number" data-number="1">-</div>
+					<div class="edition-number" data-number="2">-</div>
+					<div class="edition-number" data-number="3">-</div>
+					<div class="edition-number" data-number="4">-</div>
+					<div class="edition-number" data-number="5">-</div>
+				</div>
+				<div class="edition-result">
+					<div class="edition-result-title">
+						<h1>Итоги розыгрыша</h1>
+					</div>
+					<div class="edition-result-wrapper">
+						<div class="edition-result-block1">
+							<div class="table-over">
+								<table>
+									<thead>
+										<tr>
+											<th>Удачных чисел</th>
+											<th>Количество победителей</th>
+											<th>Выигрыш победителя, ETH</th>
+											<th>Общий выигрыш, ETH</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>6</td>
+											<td data-winners-count="6">-</td>
+											<td data-winners-amount="6">-</td>
+											<td data-winners-total="6">-</td>
+										</tr>
+										<tr>
+											<td>5</td>
+											<td data-winners-count="5">-</td>
+											<td data-winners-amount="5">-</td>
+											<td data-winners-total="5">-</td>
+										</tr>
+										<tr>
+											<td>4</td>
+											<td data-winners-count="4">-</td>
+											<td data-winners-amount="4">-</td>
+											<td data-winners-total="4">-</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td data-winners-count="3">-</td>
+											<td data-winners-amount="3">-</td>
+											<td data-winners-total="3">-</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td data-winners-count="2">-</td>
+											<td data-winners-amount="2">-</td>
+											<td data-winners-total="2">-</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="edition-result-block2">
+							<div class="edition-result-block2-wrapper">
+								<ul>
+									<li>
+										<div>
+											<p>Число билетов, принявших</p>
+											<p>участие в розыгрыше</p>
+										</div>
+										<span id="tickets-count">-</span>
+									</li>
+									<li>
+										<div>
+											<p>Призовой фонд, ETH</p>
+										</div>
+										<span id="prize-fund">-</span>
+									</li>
+									<li><p>Суперприз, ETH</p><span id="super-prize">-</span></li>
+								</ul>
+								<a href="#">Как получить выигрыш?</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<img src="img/icon/logo-fon.png" class="logo-fon">
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="header-container">
+			<div class="footer-wrapper">
+				<div class="footer-block">
+					<a href="#">English version</a>
+					<a href="#">Контактная информация</a>
+					<p>© 2019 CryptoBalls</p>
+				</div>
+				<div class="footer-block">
+					<p>Контракт #1 <span data-tw-scope="Contract645" data-tw-bind="contractAddress" data-tw-filter="contract">-</span></p>
+					<p>Контракт #2 <span data-tw-scope="Contract645" data-tw-bind="drawAddress" data-tw-filter="contract">-</span></p>
+					<!--<a href="#" class="link-rss">Тиражная информация <img src="img/icon/rss.png" alt=""></a>-->
+					<!--<a href="#" class="link-rss">Лотерейные новости <img src="img/icon/rss.png" alt=""></a>-->
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"></script>
+	<script src="./js/app.min.74f6be04.js" crossorigin="anonymous" integrity="sha384-SUemT0dTX8hmyXRUd7xz12lnFkMjVDJN01NG8v/cJ+yd+j5JEG4oBdHZxJT5e4KW"></script>
+	<script>
+        let interval = setInterval(async () => {
+            if (Contract645.ticketPrice) {
+                clearInterval(interval);
+                let drawNumber = getQueryVariable('d');
+                await initEdition(drawNumber);
+                $('body').addClass('loaded');
+            }
+        });
+	</script>
+
+</body></html>

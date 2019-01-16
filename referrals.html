@@ -1,0 +1,131 @@
+<!DOCTYPE html><html lang="ru"><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Crypto Balls</title>
+	<link rel="stylesheet" href="./css/main.min.138f5288.css" crossorigin="anonymous" integrity="sha384-1fJDG8gUoAVP4SRUcO4UNo2bJl9CCphs0Fs+KhY2O8bwfh3VZjh1FgxOuws6dpEY">
+	<link rel="apple-touch-icon" sizes="57x57" href="./apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="./apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="./apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="./apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="./apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="./apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="./apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="./apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="./apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="./android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="./favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="./ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="manifest" href="./manifest.json">
+</head>
+<body>
+    <div id="loader-wrapper">
+        <div id="loader">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-1a"></div>
+            <div class="circle circle-2"></div>
+            <div class="circle circle-3"></div>
+            <h1>Loading...</h1>
+        </div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+	<header class="header">
+		<div class="header-container">
+			<div class="header-wrapper">
+				<div class="logo">
+					<img src="img/logo.png" alt="">
+				</div>
+				<a href="buy.html" class="button button-header action">Купить билет</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">О лотерее</a></li>
+						<li><a href="archive.html">Архив тиражей</a></li>
+						<li><a href="regulation.html">Правила</a></li>
+						<li class="action"><a href="myticket.html">Мои билеты <span data-tw-scope="Contract645" data-tw-bind="myTicketsCount">0</span></a></li>
+						<li class="action"><a href="referrals.html" class="active">Рефералы</a></li>
+					</ul>
+				</nav>
+				<div class="btn-popup-menu">Навигация</div>
+				<div class="output">
+					<div class="output-number">
+						<p data-tw-scope="Contract645" data-tw-bind="myBalance" data-tw-filter="ether">0</p>
+						<span>ETH</span>
+					</div>
+					<a href="#" class="withdraw action">Вывести</a>
+				</div>
+			</div>
+		</div>
+		<div class="header-line">
+			<span>Открытая ETH лотерея</span>
+		</div>
+	</header>
+
+	<main class="main referrals">
+		<div class="container">
+			<div class="referrals-wrapper">
+				<div class="referrals-block-link">
+					<div class="referrals-block-title">
+						<h1>Ваша реферальная ссылка</h1>
+						<div class="referrals-block-link-wrapper">-</div>
+						<a class="button button-referrals action">Получить ссылку</a>
+					</div>
+				</div>
+				<div class="referrals-block-meta">
+					<div class="referrals-block-title">
+						<h1>Данные по реферу</h1>
+					</div>
+					<div class="referrals-block-meta-wrapper">
+						<ul>
+							<li><p>Сколько всего заработано по реферальной ссылке</p><span><i data-tw-scope="Contract645" data-tw-bind="myReferrerEarn" data-tw-filter="ether">-</i> ETH</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="main-description">
+				<p>Заработайте, благодаря нашей реферальной системе.</p>
+				<p><b>Условия и правила:</b></p>
+				<p>– заработайте <b>8%</b> с каждого проданного вами билета</p>
+				<p>– заработайте <b>2%</b> с суммы выигрыша проданного вами билета</p>
+				<p>– Если проданный вами билет угадал 2 числа, то владелец билета получает новый билет, а вы сохраняете возможность получить с него 2% от суммы следующего выигрыша</p>
+				<p>– Бонус с продажи каждого билета моментально зачисляется на ваш баланс в смарт контракте, который вы можете вывести в любое время</p>
+				<p>– Бонус с суммы выигрыша проданного вами билета зачисляется на ваш баланс только после того, как владелец билета проверит билет и заберет выигрыш.</p>
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="header-container">
+			<div class="footer-wrapper">
+				<div class="footer-block">
+					<a href="#">English version</a>
+					<a href="#">Контактная информация</a>
+					<p>© 2019 CryptoBalls</p>
+				</div>
+				<div class="footer-block">
+					<p>Контракт #1 <span data-tw-scope="Contract645" data-tw-bind="contractAddress" data-tw-filter="contract">-</span></p>
+					<p>Контракт #2 <span data-tw-scope="Contract645" data-tw-bind="drawAddress" data-tw-filter="contract">-</span></p>
+					<!--<a href="#" class="link-rss">Тиражная информация <img src="img/icon/rss.png" alt=""></a>-->
+					<!--<a href="#" class="link-rss">Лотерейные новости <img src="img/icon/rss.png" alt=""></a>-->
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"></script>
+	<script src="./js/app.min.74f6be04.js" crossorigin="anonymous" integrity="sha384-SUemT0dTX8hmyXRUd7xz12lnFkMjVDJN01NG8v/cJ+yd+j5JEG4oBdHZxJT5e4KW"></script>
+	<script>
+        let interval = setInterval(() => {
+            if (Contract645.ready) {
+                clearInterval(interval);
+                initReferrer();
+                $('body').addClass('loaded');
+            }
+        });
+	</script>
+
+</body></html>
