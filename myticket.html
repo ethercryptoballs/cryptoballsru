@@ -67,6 +67,7 @@
 	<main class="main myticket">
 		<div class="container">
 			<div class="myticket-wrapper">
+				<div class="onesignal-customlink-container" style="margin: 0 auto 20px auto;text-align: center;"></div>
 				<div class="myticket-title">
 					<h1>Мои билеты</h1>
 				</div>
@@ -78,6 +79,7 @@
 					<!--<a href="#">Выигравшие билеты</a>-->
 				<!--</div>-->
 				<div class="myticket-container">
+					<p>У вас нет билетов</p>
 				</div>
 			</div>
 		</div>
@@ -102,10 +104,11 @@
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 	<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"></script>
-	<script src="./js/app.min.3ed742f3.js" crossorigin="anonymous" integrity="sha384-NMKI4IIW0IbgIBVAyYKGJ7/06ZpPEaVS+FCjF1ZeVZMOenAuanmEluQwPVysUOvb"></script>
+	<script>const checkTicketsCount = true;</script>
+	<script src="./js/app.min.855eb953.js" crossorigin="anonymous" integrity="sha384-c2JzeFJKcrXcozm8b6BTfdA0WSbXbCooMP/op9V2vwveMep9xc2jsQlkmTpRLGLM"></script>
 	<script>
         let interval = setInterval(async () => {
-            if (Contract645.ready) {
+            if (Contract645.ready && Contract645.myTickets !== undefined) {
                 clearInterval(interval);
                 await initMyTickets();
                 $('body').addClass('loaded');
